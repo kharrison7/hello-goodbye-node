@@ -18,16 +18,16 @@ app.get('/', function(req, res){
   res.send('Hello User, try putting /hello or /goodbye at the end of the url.');
 });
 
-app.get('/hello', function(req, res){
-  res.send('Hello there!');
-});
+// app.get('/hello', function(req, res){
+//   res.send('Hello there!');
+// });
 
 app.get('/goodbye', function(req, res){
   res.send('See you later!');
 });
 
-app.get('/test/:userId/', function (req, res) {
-  res.send(`Hello: ${req.params.userId}`);
+app.get('/hello/:userId/', function (req, res) {
+  res.send(`Hello ${req.params.userId}`);
 })
 
 
