@@ -26,6 +26,14 @@ app.get('/goodbye', function(req, res){
   res.send('See you later!');
 });
 
+app.get('/test/:userId/', function (req, res) {
+  res.send(`Hello: ${req.params.userId}`);
+})
+
+
+
+
+
 // This 'listens' for requests from localhost:3000/.
 const port = 3000;
 app.listen(port, function(){
